@@ -29,7 +29,7 @@ def detect(frame):
         confidence = confidences[i]
         if confidence < 0.2:
             continue
-          idx = int(classes[i])
+        idx = int(classes[i])
         if idx != 15:
             continue
         (startX, startY, endX, endY) = box.astype('int')
